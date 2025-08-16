@@ -4,7 +4,6 @@ workflows:
     max_build_duration: 60
     environment:
       flutter: stable
-      xcode: absent
     scripts:
       - name: Install dependencies
         script: flutter pub get
@@ -15,6 +14,4 @@ workflows:
     publishing:
       email:
         recipients:
-          - yadavaryan9661@gmail.com  # if you want notifications
-        on_build_success: true
-        on_build_failure: true
+          - your-email@example.com
